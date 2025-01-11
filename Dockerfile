@@ -10,6 +10,8 @@ ARG VERSION=unknown
 ARG COMMIT=unknown
 ARG CREATED="an unknown date"
 ENV TZ=Europe/London
+ENV QBITTORRENT_CONTAINER_NAME=qbittorrent
+ENV GLUETUN_CONTAINER_NAME=gluetun
 
 LABEL \
     org.opencontainers.image.authors="jakubkopys95@gmail.com" \

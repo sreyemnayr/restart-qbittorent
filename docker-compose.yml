@@ -8,6 +8,8 @@ services:
     network_mode: none # it doesn't need internet connectivity, it's more secure this way
     environment:
       - TZ=Europe/London
+      - QBITTORRENT_CONTAINER_NAME=qbittorrent
+      - GLUETUN_CONTAINER_NAME=gluetun
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     # normally, you'd have gluetun and qibtorrent services here too
